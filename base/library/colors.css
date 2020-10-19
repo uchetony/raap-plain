@@ -1,0 +1,22 @@
+:root{
+    /* Grey colors */
+    --grey-color-1: #FFFFFF;
+    --grey-color-2: #FAFAFA;
+    --grey-color-3: #F6FCFF ;
+    --grey-color-4: #F0F4F6;
+    --grey-color-5: #E3E3E3;
+    --grey-color-6: #DFF7FF;
+    --grey-color-7: #DADADA;
+    --grey-color-8: #9B9B9B;
+    --grey-color-9: #7C86A2;
+    --grey-color-10: #071D31;
+    --grey-color-11: #011B33;
+
+    /* Primary color */
+    --primary-color: #3BB75E;
+
+    /* Accent colors */
+    --accent-color-blue: #09A5DB;
+    --accent-color-red: #EF3B24;
+
+}
