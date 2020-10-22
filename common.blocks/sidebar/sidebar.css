@@ -1,0 +1,204 @@
+.sidebar{
+    position: fixed;
+    left: -270px;
+    z-index: 50;
+    top: 0;
+    height: 100%;
+    width: 270px;
+    transition: all .5s;
+    box-shadow: var(--default-box-shadow);
+    background-color: var(--grey-color-1);
+}
+
+.sidebar__top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    background-color: transparent;
+    padding-top: var(--spacing-3);
+}
+
+.sidebar__top-logo{ height: 20px; }
+.sidebar__top-image{ height: 100%; }
+
+.sidebar__user{
+    position: absolute;
+    top: 50px;
+    height: 80px;
+    width: 100%;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+}
+
+.sidebar__image-text-pair{
+    display: flex;
+    /* background-color: black; */
+    margin-left: var(--spacing-6);
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar__user-image{
+    height: 40px;
+}
+
+.sidebar__user-text{
+    font-size: var(--font-size-2);
+    font-weight: var(--light-font-weight);
+    color: var(--grey-color-8);
+    margin-left: var(--spacing-4);
+}
+
+.sidebar__body{
+    position: absolute;
+    top: calc(50px + 80px);
+    height: calc(100% - 50px + 800px);
+    width: 100%;
+    padding-top: var(--spacing-6);
+    overflow-y: auto;
+    /* background-color: orange; */
+}
+
+.sidebar__list-holder{
+    list-style-type: none;
+    /* background-color: orange; */
+    padding: 0;
+}
+
+.sidebar__list{
+    /* background-color: green; */
+    width: 100%;
+    padding: 0;
+    height: 60px;
+}
+
+.sidebar__link{
+    text-decoration: none;
+    /* background-color: green; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+.sidebar__link_active{
+    border-left: 5px solid var(--primary-color);
+}
+
+.sidebar__link_active .sidebar__icon-text-pair{
+    margin-left: calc(var(--spacing-6) - 5px);
+}
+
+.sidebar__link_active .sidebar__icon{
+    color: var(--grey-color-11);
+}
+
+.sidebar__link_active .sidebar__text{
+    font-size: var(--font-size-3);
+    line-height: 19px;
+    font-weight: var(--normal-font-weight);
+    color: var(--grey-color-11);
+}
+
+.sidebar__list-badge{
+    font-size: var(--font-size-1);
+    background-color: var(--accent-color-red);
+    position: absolute;
+    top: 10%;
+    left: 45%;
+    padding: var(--spacing-1) var(--spacing-2);
+    border-radius: 50%;
+    color: var(--grey-color-1);
+    border: 1px solid var(--grey-color-1);
+}
+
+.sidebar__list-divider{
+    width: 100px;
+    background-color: var(--grey-color-6);
+    border: 0.1px solid var(--grey-color-6);
+    height: 0.5px;
+}
+
+
+.sidebar__icon{ 
+    display: block; 
+    color: var(--grey-color-7); 
+    width: 20px;
+}
+.sidebar__icon_footer{ color: var(--grey-color-9); }
+.sidebar__text{ 
+    display: block; 
+    font-size: var(--font-size-2);
+    color: var(--grey-color-9); 
+    margin-left: var(--spacing-3);
+    line-height: 17px;
+}
+
+.sidebar__icon-text-pair{
+    /* background-color: blue; */
+    width: 100%;
+    margin-left: var(--spacing-6);
+    font-weight: var(--light-font-weight);
+    display: flex;
+}
+
+.sidebar__sub-list-holder{
+    list-style-type: none;
+    /* background-color: orange; */
+    margin-left: var(--spacing-6);
+    padding: 0;
+}
+
+.sidebar__sub-list{
+    /* background-color: green; */
+    width: 100%;
+    padding: 0;
+    height: 40px;
+}
+
+.sidebar__sub-link{
+    text-decoration: none;
+    /* background-color: green; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+.sidebar__sub-link-text{ 
+    display: block; 
+    font-size: var(--font-size-2);
+    color: var(--grey-color-9); 
+    margin-left: var(--spacing-6);
+    line-height: 16px;
+    font-weight: var(--light-font-weight);
+}
+
+.sidebar__sub-link_active{
+    border-left: 3px solid var(--accent-color-blue);
+}
+
+.sidebar__sub-link_active .sidebar__sub-link-text{
+    color: var(--accent-color-blue);
+    margin-left: calc(var(--spacing-6) - 5px);
+}
+
+.sidebar__signout{
+    position: absolute;
+    bottom: 0%;
+    height: 80px;
+    width: 100%;
+    background-color: var(--grey-color-2);
+    display: flex;
+    align-items: center;
+}
+
+.sidebar_open{ left: 0; }

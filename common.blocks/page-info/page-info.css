@@ -1,0 +1,21 @@
+.page-info_center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+    /* background-color: orange; */
+}
+
+.page-info__text{
+    font-size: var(--font-size-5);
+    font-weight: var(--heavy-font-weight);
+    line-height: 30px;
+    color: var(--grey-color-11);
+    margin-bottom: var(--spacing-6);
+}
+
+.page-info__link{
+    text-decoration: none;
+}

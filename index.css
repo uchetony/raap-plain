@@ -1,9 +1,38 @@
-/* General css settings */
-
 /* Rubik Google font */
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;700&display=swap');
+
+/* css variables */
+@import './base/index.css';
+
+/* BEM styles */
+@import './common.blocks/index.css';
 
 * {
     box-sizing: border-box;
     font-family: 'Rubik', sans-serif;
-  }
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: var(--spacing-2);
+    padding-top: 60px;
+    background-color: var(--grey-color-4);
+}
+
+
+.settings-category{
+    /* background-color: blue; */
+    padding-top: var(--spacing-5);
+    display: none;
+}
+
+.account-information{ margin: var(--spacing-5) 0; }
+.profile-photo{ margin: var(--spacing-5) 0;}
+
+@media only screen and (min-width: 400px) { 
+    body{
+        padding-left: var(--spacing-4);
+        padding-right: var(--spacing-4);
+    }
+}

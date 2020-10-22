@@ -1,0 +1,32 @@
+.upload{
+    margin-top: var(--spacing-6);
+    text-align: center;
+}
+
+.upload__user-initials{
+    display: inline-block;
+    font-size: var(--font-size-5);
+    background-color: var(--accent-color-blue);
+    color: var(--grey-color-1);
+    font-weight: var(--light-font-weight);
+    padding: var(--spacing-5);
+    border-radius: 50%;
+    border: 1px solid var(--accent-color-blue-dark);
+}
+
+.upload__title{
+    font-size: var(--font-size-2);
+    margin-top: var(--spacing-5);
+    font-weight: var(--light-font-weight);
+    color: var(--grey-color-11);
+}
+
+.upload__instruction{
+    display: block;
+    font-size: 11px;
+    margin-top: var(--spacing-4);
+    margin-bottom: var(--spacing-1);
+    color: var(--grey-color-8);
+    line-height: 18px;
+    font-weight: var(--light-font-weight);
+}

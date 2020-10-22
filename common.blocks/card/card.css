@@ -1,0 +1,26 @@
+.card{
+    margin: 0;
+    background-color: var(--grey-color-1);
+    border-radius: var(--border-radius-sm);
+}
+
+.card__top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid var(--grey-color-5);
+    padding: var(--spacing-4) 0;
+}
+
+.card__header{
+    font-size: var(--font-size-3);
+    font-weight: var(--light-font-weight);
+    line-height: 24px;
+    color: var(--grey-color-11);
+}
+
+.card__body{
+    padding: var(--spacing-4);
+    padding-top: 0;
+    padding-bottom: var(--spacing-6);
+}

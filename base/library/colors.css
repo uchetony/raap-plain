@@ -14,9 +14,11 @@
 
     /* Primary color */
     --primary-color: #3BB75E;
+    --primary-color-dark: #2C8846;
 
     /* Accent colors */
     --accent-color-blue: #09A5DB;
+    --accent-color-blue-dark: #006CB3;
     --accent-color-red: #EF3B24;
 
 }
