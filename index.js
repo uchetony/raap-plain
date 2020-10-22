@@ -1,5 +1,39 @@
 const sidebar = document.querySelector(".sidebar");
 const hamburgerIcon = document.querySelector(".mobile-navbar__menu-icon");
+const popup = document.querySelector(".popup");
+const popupCheck = document.querySelector(".popup__check");
+
+
+const submit = () => {
+    const { event: { srcElement } } = window;
+    const btnText = srcElement.parentNode.querySelector(".button__text");
+    const btnSubmittingText = srcElement.parentNode.querySelector(".button__submitting-text");
+    const spinner = srcElement.parentNode.querySelector(".button__spinner");
+    const formInputs = srcElement.parentNode.querySelectorAll(".form__input")
+
+    spinner.style.display = "block";
+    btnText.style.display = "none";
+    btnSubmittingText.style.display = "block";
+
+    // Mock post request to an API endpoint
+    setTimeout(() => {
+        openPopup();
+        spinner.style.display = "none";
+        btnText.style.display = "block";
+        btnSubmittingText.style.display = "none";
+        formInputs.forEach((e) => e.value = "" );
+    }, 3000);
+}
+
+const openPopup = () => {
+    popup.classList.add("popup_open");
+    popupCheck.classList.add("popup__check_active");
+}
+
+const closePopup = () => {
+    popup.classList.remove("popup_open");
+    popupCheck.classList.remove("popup__check_active");
+}
 
 const toggleSidebar = () => {
     const hamburgerIcon = document.querySelector(".mobile-navbar__menu-icon");

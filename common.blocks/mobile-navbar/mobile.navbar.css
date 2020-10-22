@@ -9,9 +9,10 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 var(--spacing-2);
+    background-color: var(--grey-color-1);
 }
 
-.mobile-navbar::before{
+/* .mobile-navbar::before{
     content: '';
     opacity: 0.6;
     position: absolute;
@@ -19,9 +20,9 @@
     top: 0%;
     left: 0%;
     width: 100%;
-    z-index: -1;
+    z-index: -50;
     background-color: var(--grey-color-1);
-}
+} */
 
 .mobile-navbar__logo{ height: calc((2px * 3) + (var(--spacing-1) * 4)) }
 .mobile-navbar__logo-link{ -webkit-tap-highlight-color: rgba(255, 255, 255, 0); }

@@ -2,12 +2,30 @@
     height: 50px;
     width: 100%;
     border-radius: var(--border-radius-sm);
-    font-size: var(--font-size-1);
     margin-top: var(--spacing-5);
     border: none;
     letter-spacing: var(--normal-letter-spacing);
     outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .button_theme_primary{ background-color: var(--primary-color); color: var(--grey-color-1); }
 .button_border{ border: 1px solid var(--primary-color-dark); }
+
+.button__text{
+    font-size: var(--font-size-2);
+    line-height: 14px;
+}
+
+.button__submitting-text{
+    display: none;
+    font-size: var(--font-size-2);
+    line-height: 14px;
+}
+
+.button__spinner{
+    display: none;
+    margin-left: var(--spacing-1);
+}

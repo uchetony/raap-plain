@@ -1,0 +1,88 @@
+.popup{
+    display: none;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+}
+
+.popup_open{ display: block; animation: easeIn 1s; }
+
+.popup__wrapper{
+    position: inherit;
+    height: 100%;
+    width: 100%;
+}
+
+.popup__wrapper::before{
+    content: '';
+    background-color: var(--primary-color);
+    opacity: 0.95;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+}
+
+.popup__close-button{
+    color: var(--grey-color-1);
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -95%);
+    border-radius: 50%;
+    border: none;
+    font-size: var(--font-size-6);
+}
+
+.popup__check{
+    position: absolute;
+    height: 136px;
+    width: 136px;
+    background-color: var(--grey-color-1);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: var(--default-box-shadow);
+}
+
+.popup__check::before{
+    content: "";
+    background-color: transparent;
+    position: absolute;
+    border-radius: 50%;
+    top: 9%;
+    left: 9%;
+    right: 9%;
+    bottom: 9%;
+    box-shadow: var(--default-box-shadow);
+}
+
+.popup__check-icon{
+    position: absolute;
+    z-index: 3;
+    top: 31%;
+    left: 28%;
+    width: 45%;
+    fill: var(--grey-color-4);
+}
+
+.popup__check_active .popup__check-icon{
+    fill: var(--primary-color);
+    animation: bounce 1s;
+    animation-delay: 0.5s;
+}
+
+@keyframes bounce {
+    0% { transform: scale(1); }
+    50% { transform:scale(2); }
+    100% { transform: scale(1); }
+}
+
+@keyframes easeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
