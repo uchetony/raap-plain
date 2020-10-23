@@ -60,11 +60,12 @@
 }
 
 @media only screen and (min-width: 1200px) {
-    .page-info{
+    .page-info{ width: 40%; }
+    .page-info_center{
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 90%;
+        text-align: center;
     }
 }
