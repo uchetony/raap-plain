@@ -17,7 +17,7 @@
 .upload__title{
     font-size: var(--font-size-2);
     margin-top: var(--spacing-5);
-    font-weight: var(--light-font-weight);
+    font-weight: var(--normal-font-weight);
     color: var(--grey-color-11);
 }
 
@@ -29,4 +29,13 @@
     color: var(--grey-color-8);
     line-height: 18px;
     font-weight: var(--light-font-weight);
+}
+
+@media only screen and (min-width: 1200px) {
+    .upload__instruction{ 
+        margin-bottom: var(--spacing-5);
+        padding: 0 7%;
+        line-height: 20px;
+        font-size: var(--font-size-1);
+    }
 }

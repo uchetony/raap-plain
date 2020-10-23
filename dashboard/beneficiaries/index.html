@@ -10,106 +10,131 @@
 </head>
 <body>
    
-    <aside>
-        <div class="mobile-navbar">
-            <div class="mobile-navbar__logo">
-                <a href="/index.html" class="mobile-navbar__logo-link">
-                    <img class="mobile-navbar__image" src="/images/logo.png" alt="raap">
-                </a>
-            </div>
-        
-            <div class="mobile-navbar__menu-icon" onclick="toggleSidebar()">
-                <span class="mobile-navbar__hamburger mobile-navbar__hamburger-top"></span>
-                <span class="mobile-navbar__hamburger mobile-navbar__hamburger-middle"></span>
-                <span class="mobile-navbar__hamburger mobile-navbar__hamburger-bottom"></span>
-            </div>
-        </div>
+    <div class="app-holder">
+        <aside class="aside">
     
-        <div class="sidebar">
-            <div class="sidebar__top">
-                <div class="sidebar__top-logo">
-                    <img class="sidebar__top-image" src="/images/logo.png" alt="raap">
+            <div class="sidebar">
+                <div class="sidebar__top">
+                    <div class="sidebar__top-logo">
+                        <img class="sidebar__top-image" src="/images/logo.png" alt="raap">
+                    </div>
                 </div>
-            </div>
-        
-            <div class="sidebar__user">
-                <div class="sidebar__image-text-pair">
-                    <img class="sidebar__user-image" src="/images/user.png" alt="raap user">
-                    <p class="sidebar__user-text" > Shola Akinlade </p>
+            
+                <div class="sidebar__user">
+                    <div class="sidebar__image-text-pair">
+                        <img class="sidebar__user-image" src="/images/user.png" alt="raap user">
+                        <p class="sidebar__user-text" > Shola Akinlade </p>
+                    </div>
                 </div>
-            </div>
-        
-            <div class="sidebar__body">
-                <div class="sidebar__container">
-                    <ul class="sidebar__list-holder">
-        
-                        <li class="sidebar__list">
-                            <a href="/dashboard/request/" class="sidebar__link" >
-                                <div class="sidebar__icon-text-pair">
-                                    <i class="sidebar__icon fas fa-file-invoice-dollar"></i>
-                                    <p class="sidebar__text" > Request </p>
-                                    <span class="sidebar__list-badge">3</span>
-                                </div>
-                            </a>
-                        </li><hr class="sidebar__list-divider">
-        
-                        <li class="sidebar__list">
-                            <a href="/dashboard/beneficiaries/" class="sidebar__link" >
-                                <div class="sidebar__icon-text-pair">
-                                    <i class="sidebar__icon fas fa-user-friends"></i>
-                                    <p class="sidebar__text" > Beneficiaries  </p>
-                                </div>
-                            </a>
-                        </li><hr class="sidebar__list-divider">
-                        
-                        <li class="sidebar__list">
-                            <a href="/dashboard/settings/#account-details" class="sidebar__link" >
-                                <div class="sidebar__icon-text-pair">
-                                    <i class="sidebar__icon fas fa-cog"></i>
-                                    <p class="sidebar__text" > Settings </p> 
-                                </div>
-                            </a>
-                        </li><hr class="sidebar__list-divider">
-    
-                        <ul class="sidebar__sub-list-holder">
-                            <li class="sidebar__sub-list">
-                                <a href="/dashboard/settings#account-details" onclick="showSetting()"  class="sidebar__sub-link" >
-                                    <p class="sidebar__sub-link-text" > Account Details </p>
+            
+                <div class="sidebar__body">
+                    <div class="sidebar__container">
+                        <ul class="sidebar__list-holder">
+            
+                            <li class="sidebar__list">
+                                <a href="/dashboard/request/" class="sidebar__link" >
+                                    <div class="sidebar__icon-text-pair">
+                                        <i class="sidebar__icon fas fa-file-invoice-dollar"></i>
+                                        <p class="sidebar__text" > Request </p>
+                                        <span class="sidebar__list-badge">3</span>
+                                    </div>
                                 </a>
                             </li><hr class="sidebar__list-divider">
-                            <li class="sidebar__sub-list">
-                                <a href="/dashboard/settings#users" onclick="showSetting()" class="sidebar__sub-link" >
-                                    <p class="sidebar__sub-link-text" > Users </p>
+            
+                            <li class="sidebar__list">
+                                <a href="/dashboard/beneficiaries/" class="sidebar__link" >
+                                    <div class="sidebar__icon-text-pair">
+                                        <i class="sidebar__icon fas fa-user-friends"></i>
+                                        <p class="sidebar__text" > Beneficiaries  </p>
+                                    </div>
                                 </a>
                             </li><hr class="sidebar__list-divider">
-                            <li class="sidebar__sub-list">
-                                <a href="/dashboard/settings#expense-categories" onclick="showSetting()" class="sidebar__sub-link" >
-                                    <p class="sidebar__sub-link-text" > Expense Categories </p>
+                            
+                            <li class="sidebar__list">
+                                <a href="/dashboard/settings/#account-details" class="sidebar__link" >
+                                    <div class="sidebar__icon-text-pair">
+                                        <i class="sidebar__icon fas fa-cog"></i>
+                                        <p class="sidebar__text" > Settings </p> 
+                                    </div>
                                 </a>
                             </li><hr class="sidebar__list-divider">
+        
+                            <ul class="sidebar__sub-list-holder">
+                                <li class="sidebar__sub-list">
+                                    <a href="/dashboard/settings#account-details" onclick="showSetting()"  class="sidebar__sub-link" >
+                                        <p class="sidebar__sub-link-text" > Account Details </p>
+                                    </a>
+                                </li><hr class="sidebar__list-divider">
+                                <li class="sidebar__sub-list">
+                                    <a href="/dashboard/settings#users" onclick="showSetting()" class="sidebar__sub-link" >
+                                        <p class="sidebar__sub-link-text" > Users </p>
+                                    </a>
+                                </li><hr class="sidebar__list-divider">
+                                <li class="sidebar__sub-list">
+                                    <a href="/dashboard/settings#expense-categories" onclick="showSetting()" class="sidebar__sub-link" >
+                                        <p class="sidebar__sub-link-text" > Expense Categories </p>
+                                    </a>
+                                </li><hr class="sidebar__list-divider">
+                            </ul>
                         </ul>
+                    </div>
+                </div>
+            
+                <div class="sidebar__signout">
+                    <a href="/index.html" class="sidebar__link">
+                        <div class="sidebar__icon-text-pair">
+                            <i class="sidebar__icon sidebar__icon_footer fas fa-sign-out-alt"></i>
+                            <span class="sidebar__text" > Sign out </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </aside>
+    
+        <main class="main">
+            <div class="navbar">
+                <div class="mobile-navbar">
+                    <div class="mobile-navbar__logo">
+                        <a href="/index.html" class="mobile-navbar__logo-link">
+                            <img class="mobile-navbar__image" src="/images/logo.png" alt="raap">
+                        </a>
+                    </div>
+                
+                    <div class="mobile-navbar__menu-icon" onclick="toggleSidebar()">
+                        <span class="mobile-navbar__hamburger mobile-navbar__hamburger-top"></span>
+                        <span class="mobile-navbar__hamburger mobile-navbar__hamburger-middle"></span>
+                        <span class="mobile-navbar__hamburger mobile-navbar__hamburger-bottom"></span>
+                    </div>
+                </div>
+    
+                <div class="desktop-navbar">
+                    <ul class="desktop-navbar__list-holder">
+                        <li class="desktop-navbar__list">
+                            <a href="/dashboard/settings#account-details" onclick="showSetting()"  class="desktop-navbar__link" >
+                                <p class="desktop-navbar__link-text" > Account Details </p>
+                            </a>
+                        </li>
+                        <li class="desktop-navbar__list">
+                            <a href="/dashboard/settings#users" onclick="showSetting()" class="desktop-navbar__link" >
+                                <p class="desktop-navbar__link-text" > Users </p>
+                            </a>
+                        </li>
+                        <li class="desktop-navbar__list">
+                            <a href="/dashboard/settings#expense-categories" onclick="showSetting()" class="desktop-navbar__link" >
+                                <p class="desktop-navbar__link-text" > Expense Categories </p>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
-        
-            <div class="sidebar__signout">
-                <a href="/index.html" class="sidebar__link">
-                    <div class="sidebar__icon-text-pair">
-                        <i class="sidebar__icon sidebar__icon_footer fas fa-sign-out-alt"></i>
-                        <span class="sidebar__text" > Sign out </span>
-                    </div>
-                </a>
+    
+            <div class="page-info page-info_center">
+                <h3 class="page-info__text">
+                    Cooming soon!
+                </h3>
             </div>
-        </div>
-    </aside>
-
-    <main>
-        <div class="page-info page-info_center">
-            <h3 class="page-info__text">
-                Cooming soon!
-            </h3>
-        </div>
-    </main>
+        </main>
+    </div>
     
 </body>
 

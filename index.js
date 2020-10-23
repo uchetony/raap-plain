@@ -4,12 +4,13 @@ const popup = document.querySelector(".popup");
 const popupCheck = document.querySelector(".popup__check");
 
 
-const submit = () => {
-    const { event: { srcElement } } = window;
+const submitForm = (e) => {
+    e.preventDefault();
+    const { srcElement } = e;
     const btnText = srcElement.parentNode.querySelector(".button__text");
     const btnSubmittingText = srcElement.parentNode.querySelector(".button__submitting-text");
     const spinner = srcElement.parentNode.querySelector(".button__spinner");
-    const formInputs = srcElement.parentNode.querySelectorAll(".form__input")
+    const formInputs = srcElement.parentNode.querySelectorAll(".form__input");
 
     spinner.style.display = "block";
     btnText.style.display = "none";
@@ -21,7 +22,7 @@ const submit = () => {
         spinner.style.display = "none";
         btnText.style.display = "block";
         btnSubmittingText.style.display = "none";
-        formInputs.forEach((e) => e.value = "" );
+        formInputs && formInputs.forEach((e) => e.value = "" );
     }, 3000);
 }
 
@@ -46,7 +47,15 @@ const showSetting = () => {
     setTimeout(() => {
         const settingId = window.location.hash;
         const sidebarSubLinks = document.querySelectorAll(".sidebar__sub-link");
+        const desktopNavbarLinks = document.querySelectorAll(".desktop-navbar__link")
         const settingsCategory = document.querySelectorAll(".settings-category");
+
+        desktopNavbarLinks.forEach((el) => {
+            el.classList.remove("desktop-navbar__link_active");
+            if (el.hash === `${settingId}`) {
+                el.classList.add("desktop-navbar__link_active");
+            }
+        })
 
         // make the sublink in the sidebar active
         sidebarSubLinks.forEach((el) => {

@@ -24,3 +24,11 @@
     padding-top: 0;
     padding-bottom: var(--spacing-6);
 }
+
+@media only screen and (min-width: 1200px) {
+    .card__body{
+        padding: var(--spacing-5);
+        padding-top: 0;
+        padding-bottom: var(--spacing-6);
+    }
+}
