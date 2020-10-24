@@ -79,7 +79,10 @@ body {
 
 @media only screen and (min-width: 1200px) { 
     .aside{ width: 300px; }
-    .main{ left: 300px; width: calc(100% - 300px); padding: var(--spacing-4); }
-    .settings-category__emelement-holder{ margin-top: var(--spacing-6); }
+    .main{ 
+        left: 300px; width: calc(100% - 300px); 
+        padding-left: var(--spacing-6); padding-right: var(--spacing-6); 
+    }
+    .settings-category__emelement-holder{ margin-top: var(--spacing-6) }
     
 }
