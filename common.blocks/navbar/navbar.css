@@ -1,5 +1,6 @@
 .desktop-navbar{ display: none; }
 .mobile-navbar{
+    box-sizing: border-box;
     position: fixed;
     left: 0;
     top: 0;
@@ -63,6 +64,7 @@
 @media only screen and (min-width: 1024px) {
     .mobile-navbar{ display: none; }
     .desktop-navbar{
+        box-sizing: border-box;
         top: 0;
         left: 270px;
         height: 70px;
@@ -76,6 +78,7 @@
     .desktop-navbar__list-holder{
         list-style-type: none;
         padding: 0;
+        margin: 0;
         height: 100%;
         display: flex;
     }

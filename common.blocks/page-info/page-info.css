@@ -1,14 +1,9 @@
-.page-info{
+.page-info__position_absolute{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%;
-}
-
-.page-info_center{
-    text-align: center;
-    /* background-color: orange; */
 }
 
 .page-info__logo{
@@ -24,8 +19,18 @@
     margin-bottom: var(--spacing-3);
 }
 
+.page-info__text_center{ 
+    position: absolute;
+    width: 100%;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
 .page-info__sub-text{
-    margin-bottom: var(--spacing-1);
+    margin-top: var(--spacing-3);
+    margin-bottom: var(--spacing-6);
     font-size: var(--font-size-2);
     font-weight: var(--light-font-weight);
     line-height: 24px;
@@ -36,7 +41,7 @@
 }
 
 @media only screen and (min-width: 600px) { 
-    .page-info{ 
+    .page-info__position_absolute{ 
         width: 70%;
         top: 50%; 
         left: 15%;
@@ -45,7 +50,7 @@
 }
 
 @media only screen and (min-width: 768px) { 
-    .page-info{ 
+    .page-info__position_absolute{ 
         width: 75%;
         top: 50%; 
         left: 10%;
@@ -69,14 +74,7 @@
 }
 
 @media only screen and (min-width: 1024px) {
-    .page-info{ width: 50%; }
-    .page-info_center{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-    }
+    .page-info__position_absolute{ width: 55%; }
 }
 
 @media only screen and (min-width: 1200px) {

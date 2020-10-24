@@ -10,6 +10,7 @@
     background-color: var(--primary-color);
     border-radius: 1px;
     width: 35px;
+    margin: 0;
     border: none;
 }
 

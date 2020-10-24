@@ -1,0 +1,31 @@
+.section{ padding-top: var(--spacing-5); }
+
+.section__element{ margin: var(--spacing-5) 0; }
+
+@media only screen and (min-width: 768px) { 
+    .section__emelement-holder{
+        display: flex;
+        justify-content: space-between;
+        margin-top: var(--spacing-5);
+    }
+
+    .section__element{
+        padding: 0;
+        margin: 0;
+        width: calc((100% - (2 * var(--spacing-4))) / 2);
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .section{ padding-top: 0; }
+    .section__emelement-holder{ margin-top: var(--spacing-4); }
+    .section__element{
+        padding: 0;
+        margin: 0;
+        width: 48%;
+    }
+}
+
+@media only screen and (min-width: 1200px) { 
+    .section__emelement-holder{ margin-top: var(--spacing-6) }
+}

@@ -48,7 +48,7 @@ const showSetting = () => {
         const settingId = window.location.hash;
         const sidebarSubLinks = document.querySelectorAll(".sidebar__sub-link");
         const desktopNavbarLinks = document.querySelectorAll(".desktop-navbar__link")
-        const settingsCategory = document.querySelectorAll(".settings-category");
+        const settingsCategory = document.querySelectorAll(".section_settings-category");
 
         desktopNavbarLinks.forEach((el) => {
             el.classList.remove("desktop-navbar__link_active");
