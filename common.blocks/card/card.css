@@ -25,6 +25,24 @@
     padding-bottom: var(--spacing-6);
 }
 
+
+@media only screen and (min-width: 600px) {
+    .card__body{
+        padding: var(--spacing-7);
+        padding-top: 0;
+        padding-bottom: var(--spacing-6);
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    .card__body{
+        padding: var(--spacing-4);
+        padding-top: 0;
+        padding-bottom: var(--spacing-6);
+    }
+}
+
 @media only screen and (min-width: 1200px) {
     .card__body{
         padding: var(--spacing-5);

@@ -35,6 +35,15 @@
     text-decoration: none;
 }
 
+@media only screen and (min-width: 600px) { 
+    .page-info{ 
+        width: 70%;
+        top: 50%; 
+        left: 15%;
+        transform: translate(-15%, -50%);
+    }
+}
+
 @media only screen and (min-width: 768px) { 
     .page-info{ 
         width: 75%;
@@ -59,8 +68,8 @@
     }
 }
 
-@media only screen and (min-width: 1200px) {
-    .page-info{ width: 40%; }
+@media only screen and (min-width: 1024px) {
+    .page-info{ width: 50%; }
     .page-info_center{
         position: absolute;
         top: 50%;
@@ -68,4 +77,8 @@
         transform: translate(-50%, -50%);
         text-align: center;
     }
+}
+
+@media only screen and (min-width: 1200px) {
+    .page-info{ width: 40%; }
 }
