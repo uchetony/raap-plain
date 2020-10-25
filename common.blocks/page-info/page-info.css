@@ -16,6 +16,7 @@
     font-weight: var(--heavy-font-weight);
     line-height: 36px;
     color: var(--grey-color-11);
+    margin: 0;
     margin-bottom: var(--spacing-3);
 }
 
@@ -37,6 +38,8 @@
 }
 
 .page-info__link{
+    display: block;
+    width: 50%;
     text-decoration: none;
 }
 
@@ -78,5 +81,5 @@
 }
 
 @media only screen and (min-width: 1200px) {
-    .page-info{ width: 40%; }
+    .page-info{ width: 40% }
 }

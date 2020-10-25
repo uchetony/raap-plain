@@ -40,7 +40,7 @@ const toggleSidebar = () => {
     const hamburgerIcon = document.querySelector(".mobile-navbar__menu-icon");
     const sidebar = document.querySelector(".sidebar");
     sidebar.classList.toggle("sidebar_open");
-    hamburgerIcon.classList.toggle("mobile-navbar__menu-icon_close");
+    hamburgerIcon.classList.toggle("mobile-navbar__menu-icon_show-close");
 }
 
 const showSetting = () => {
@@ -63,7 +63,7 @@ const showSetting = () => {
             if (el.hash === `${settingId}`) {
                 el.classList.add("sidebar__sub-link_active");
                 sidebar.classList.remove("sidebar_open");
-                hamburgerIcon.classList.remove("mobile-navbar__menu-icon_close");
+                hamburgerIcon.classList.remove("mobile-navbar__menu-icon_show-close");
             }
         })
 

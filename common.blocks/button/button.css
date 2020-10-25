@@ -19,8 +19,6 @@
 
 .button_border{ border: 1px solid var(--primary-color-dark); }
 
-.button_width_half{ width: 55%; }
-
 .button__text{
     font-size: var(--font-size-2);
     letter-spacing: var(--normal-letter-spacing);
@@ -39,7 +37,6 @@
 }
 
 @media only screen and (min-width: 1200px) {
-    /* .button:hover{ transform: scale(1.05); } */
-    .button{ width: 40%; }
+    .button_width_half{ width: 40%; }
     .button_position_center{ margin: auto; }
 }

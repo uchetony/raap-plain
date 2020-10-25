@@ -47,16 +47,16 @@
     top: 78%
 }
 
-.mobile-navbar__menu-icon_close .mobile-navbar__hamburger-top{
+.mobile-navbar__menu-icon_show-close .mobile-navbar__hamburger-top{
     transform: rotate(45deg);
     top: 48%;
 }
 
-.mobile-navbar__menu-icon_close .mobile-navbar__hamburger-middle{
+.mobile-navbar__menu-icon_show-close .mobile-navbar__hamburger-middle{
     display: none;
 }
 
-.mobile-navbar__menu-icon_close .mobile-navbar__hamburger-bottom{
+.mobile-navbar__menu-icon_show-close .mobile-navbar__hamburger-bottom{
     transform: rotate(-45deg);
     top: 48%;
 }
