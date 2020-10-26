@@ -47,3 +47,11 @@
 .form__input:focus::placeholder{
     color: var(--grey-color-10);   
 }
+
+@media only screen and (min-width: 1200px) {
+    .form__input_big-screen-pair{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: var(--spacing-5);
+    }
+}

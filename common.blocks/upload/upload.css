@@ -3,7 +3,7 @@
     text-align: center;
 }
 
-.upload__user-initials{
+.upload__alt-pic-text{
     display: inline-block;
     font-size: var(--font-size-5);
     background-color: var(--accent-color-blue);

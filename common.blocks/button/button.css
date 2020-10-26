@@ -38,5 +38,5 @@
 
 @media only screen and (min-width: 1200px) {
     .button_width_half{ width: 40%; }
-    .button_position_center{ margin: auto; }
+    .button_position_center{ margin: auto;  margin-top: var(--spacing-5); }
 }
