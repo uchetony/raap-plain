@@ -81,7 +81,11 @@
         margin: 0;
         height: 100%;
         display: flex;
+        align-items: center;
     }
+
+    .desktop-navbar__list{ height: 100%; }
+
     .desktop-navbar__link{
         display: inline-block;
         text-decoration: none;
@@ -105,10 +109,16 @@
     .desktop-navbar__link_active .desktop-navbar__link-text{
     color: var(--accent-color-blue);
     }
+
+    .desktop-navbar__list-holder-header{
+        margin: 0 var(--spacing-4); font-weight: var(--light-font-weight);
+        font-size: var(--font-size-4);
+    }
 }
 
 @media only screen and (min-width: 1200px) {
     .mobile-navbar{ display: none; }
     .desktop-navbar{ left: 300px; width: calc(100% - 300px); }
     .desktop-navbar__link{ padding: 0 var(--spacing-6); }
+    .desktop-navbar__list-holder-header{ margin: 0 var(--spacing-6); }
 }
