@@ -96,6 +96,8 @@
         -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
         padding: 0 var(--spacing-4);
     }
+
+    .desktop-navbar__link:hover .desktop-navbar__link-text{ color: var(--accent-color-blue); }
     .desktop-navbar__link-text{  
         font-size: var(--font-size-2);
         color: var(--grey-color-8); 

@@ -1,4 +1,5 @@
 .button{
+    position: relative;
     height: 50px;
     width: 100%;
     border-radius: var(--border-radius-sm);
@@ -14,8 +15,37 @@
     -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
+.button::after{
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: var(--border-radius-sm);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
 
-.button_theme_primary{ background-color: var(--primary-color); color: var(--grey-color-1); }
+.button:hover{
+    transform: translateY(-1px);
+    box-shadow: var(--default-box-shadow);
+}
+
+.button:hover::after{
+    transform: scaleX(1.1) scaleY(1.2);
+    opacity: 0;
+}
+
+.button_theme_primary{ 
+    background-color: var(--primary-color); 
+    color: var(--grey-color-1); 
+}
+
+.button_theme_primary::after{
+    background: var(--primary-color);
+}
 
 .button_border{ border: 1px solid var(--primary-color-dark); }
 
@@ -33,7 +63,7 @@
 
 .button__spinner{
     display: none;
-    margin-left: var(--spacing-1);
+    margin-left: var(--spacing-2);
 }
 
 @media only screen and (min-width: 1200px) {

@@ -1,4 +1,4 @@
-.popup{
+.success-popup{
     display: none;
     position: fixed;
     height: 100vh;
@@ -8,15 +8,15 @@
     z-index: 50;
 }
 
-.popup_open{ display: block; animation: easeIn 1s; }
+.success-popup_open{ display: block; animation: easeIn 1s; }
 
-.popup__wrapper{
+.success-popup__wrapper{
     position: inherit;
     height: 100%;
     width: 100%;
 }
 
-.popup__wrapper::before{
+.success-popup__wrapper::before{
     content: '';
     background-color: var(--primary-color);
     opacity: 0.95;
@@ -26,7 +26,7 @@
     position: absolute;
 }
 
-.popup__close-button{
+.success-popup__close-button{
     color: var(--grey-color-1);
     position: absolute;
     top: 95%;
@@ -36,9 +36,14 @@
     border: none;
     font-size: var(--font-size-6);
     cursor: pointer;
+    transition: all 0.5s;
 }
 
-.popup__check{
+.success-popup__close-button:hover{
+    color: var(--grey-color-6);
+}
+
+.success-popup__check{
     position: absolute;
     height: 136px;
     width: 136px;
@@ -50,7 +55,7 @@
     box-shadow: var(--default-box-shadow);
 }
 
-.popup__check::before{
+.success-popup__check::before{
     content: "";
     background-color: transparent;
     position: absolute;
@@ -62,7 +67,7 @@
     box-shadow: var(--default-box-shadow);
 }
 
-.popup__check-icon{
+.success-popup__check-icon{
     position: absolute;
     z-index: 3;
     top: 31%;
@@ -71,7 +76,7 @@
     fill: var(--grey-color-4);
 }
 
-.popup__check_active .popup__check-icon{
+.success-popup__check_active .success-popup__check-icon{
     fill: var(--primary-color);
     animation: bounce 1s;
     animation-delay: 0.5s;

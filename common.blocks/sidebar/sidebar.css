@@ -88,6 +88,9 @@
     -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
+.sidebar__link:hover .sidebar__icon{ color: var(--grey-color-11); }
+.sidebar__link:hover .sidebar__text{ color: var(--grey-color-11); font-weight: var(--normal-font-weight); }
+
 .sidebar__link_active{
     border-left: 5px solid var(--primary-color);
 }
@@ -131,6 +134,7 @@
     display: block; 
     color: var(--grey-color-7); 
     width: 25px;
+    text-align: center;
 }
 
 .sidebar__text{ 

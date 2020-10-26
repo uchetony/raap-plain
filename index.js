@@ -1,7 +1,7 @@
 const sidebar = document.querySelector(".sidebar");
 const hamburgerIcon = document.querySelector(".mobile-navbar__menu-icon");
-const popup = document.querySelector(".popup");
-const popupCheck = document.querySelector(".popup__check");
+const successPopup = document.querySelector(".success-popup");
+const successPopupCheck = document.querySelector(".success-popup__check");
 
 
 const submitForm = (e) => {
@@ -18,7 +18,7 @@ const submitForm = (e) => {
 
     // Mock post request to an API endpoint
     setTimeout(() => {
-        openPopup();
+        openSuccessPopup();
         spinner.style.display = "none";
         btnText.style.display = "block";
         btnSubmittingText.style.display = "none";
@@ -26,14 +26,14 @@ const submitForm = (e) => {
     }, 3000);
 }
 
-const openPopup = () => {
-    popup.classList.add("popup_open");
-    popupCheck.classList.add("popup__check_active");
+const openSuccessPopup = () => {
+    successPopup.classList.add("success-popup_open");
+    successPopupCheck.classList.add("success-popup__check_active");
 }
 
-const closePopup = () => {
-    popup.classList.remove("popup_open");
-    popupCheck.classList.remove("popup__check_active");
+const closeSuccessPopup = () => {
+    successPopup.classList.remove("success-popup_open");
+    successPopupCheck.classList.remove("success-popup__check_active");
 }
 
 const toggleSidebar = () => {
