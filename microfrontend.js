@@ -3,6 +3,7 @@ import loadResources from "./resourceLoader.js";
 function LoadMicrofrontend() {
   window.isMicroFrontend = true;
   const host = "https://raap-react.netlify.app"
+  // const host = "http://localhost:3000";
   const cacheBust = `v=${new Date().getTime()}`;
 
   fetch(`${host}/asset-manifest.json?${cacheBust}`)
@@ -18,7 +19,7 @@ function LoadMicrofrontend() {
       console.log("Microfrontend resources loaded successfully");
       window.postMessage(
         {
-          message: "RENDER_RANDOM_MICRO_FRONTEND",
+          message: "RENDER_ACCOUNT_DETAILS_MICRO_FRONTEND",
         },
         "*"
       );
